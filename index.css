@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image:url("download.jpg");
+    height: 100vh;
+    background-size:cover;
+	background-position: center;
+    font-family: sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-weight:550;
+    margin:13px 0;
+}
+nav{
+    display: flex;/*na einai to logo me ta elements sthn idia seira*/
+    background-color: rgb(48, 76, 78,0.9);
+    justify-content: space-between;
+}
+
+.nav-header{/* logo megethos kai padding*/
+    width: 120px;
+    padding-left: 25px;
+}
+.nav-header a{
+    list-style-type: none;/*leipei h katw payla sto logo*/
+}
+.nav-header img{/* logo megethos kai ipsos*/
+    height: 100%;
+    width: 100%;
+}
+.nav-header a:hover{/* logo megethos kai ipsos*/
+    background-color:transparent;
+}
+.ul-menu{
+    align-items: center;
+}
+.nav-elements ul {
+    width: 100%;
+    display:flex;
+    justify-content: end;
+    margin:auto;/*kanw ta elements na pianoun xwro gia olh thn mpara*/
+    list-style-type: none;/*kribei tis teleies*/
+    overflow: hidden; /*The overflow property specifies what should happen if content overflows an element's box.*/
+}
+  
+.nav-elements li {
+    text-align: right;
+    position: relative;
+    height: auto;
+    text-align: center;
+    margin: 0 30px 0 0;
+}
+  
+.nav-elements li a {
+    text-transform: uppercase;
+    
+    color: white;
+    text-decoration: none;/*den fainetai h katw grammh apo to a */
+}
+
+.nav-elements ul li::after{
+    content: '';
+    height: 4px;
+    width: 0%;
+    border-radius: 20px;
+    background-color: turquoise;
+    position: absolute;
+    left:0;
+    bottom: 10px;
+    transition: 0.5s;
+}
+ .nav-elements ul li:hover::after{
+   width: 100%;
+}
+ .nav-elements ul li #drugs:hover::after{
+    content: 'dont';
+    position: absolute;
+    height: 1px;
+    left: 25px;
+    bottom: 15px;
+ }
+main{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    margin: 0 auto;/*kentrarisma*/
+    margin-top: 30px;
+    padding: 25px;
+}
+
+.article-info{
+    padding-right: 10px;
+}
+.article-info p{
+    font-size: 18px;
+}
+.article-side{
+    display: flex;
+}
+
+.article-side .side {
+    height: 100%;
+    border:1.5px solid black;
+    text-align: center;
+}
+
+.article-side .side #rickimg{
+    width: 50%;
+}
+.article-side .side table tr {
+    text-align: left;
+    font-size: 18px;
+}
+.article-side .side table td {
+    text-align: left;
+    font-size: 18px;
+}
+.article-side .side table {
+    margin-top:40px;
+    height: 100%;
+    width: 100%; /*size toso oso to border*/
+    table-layout: fixed;/*na einai fix dld na mhn bgainei apeksw*/
+    word-wrap: break-word;/*na sapaei h leksh an xreiazetai*/
+}
+
+a:visited {
+    color: pink;
+}
+a:link{
+    color:lemonchiffon;
+}
+a:hover {
+    color:white;
+    background-color: rgb(41, 195, 206);
+}
+a:active {/*selected*/
+    color: blue;
+}
+
+
+.Title-of-page{
+    color:rgb(17, 138, 138);
+    text-align: center;
+    -webkit-text-stroke: 1px yellow; /* width and color sto ekswteriko tou grammatos*/
+}
+
+.video-rick video,.iframe-rick iframe {
+    width: 100%;
+    height: 70%;
+}
+.audio-rick2{
+    align-self: center;
+}
+
+.audio-rick audio{
+    width: 100%;
+    
+}
+.share-button-text{
+    margin-top: 10px;
+    display: flex;
+}
+.share-button{
+    align-self: center;
+    margin-left:10px;
+}
+
+.psyrick{
+    margin-top: 20px;
+}
+.psyrick img{
+    width: 100%;
+    height: 300px;
+}
+
+figcaption {
+    background-color: #222;
+    color:rgb(17, 138, 138);
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+} 
+dd {
+    display: block;
+    margin-inline-start: 40px;
+    table-layout: fixed;/*na einai fix dld na mhn bgainei apeksw*/
+    word-wrap: break-word;/*na sapaei h leksh an xreiazetai*/
+}
+dl{
+    table-layout: fixed;/*na einai fix dld na mhn bgainei apeksw*/
+    word-wrap: break-word;/*na sapaei h leksh an xreiazetai*/
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: rgb(48, 76, 78,0.9);
+    color: white;
+}
+.media{
+    display: flex;
+    text-align: center;
+    justify-content: center;/*center the flex item*/
+}
+
+.facebook img,.instagram img,.twitter img{
+    width: 28px;
+    border-radius: 5px;
+}
+.facebook,.instagram,.twitter{
+    width: auto;
+    align-self: center;
+    margin: 0 15px;
+}
+section .dl-beauty{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hamburger{/*orizo to element ham pou tha einai kai se ti diastaseis*/
+    text-align: right;
+    display: none;
+    flex-direction: column;/*kanei katheta tis grammes tou span*/
+    justify-content: space-between;
+    align-self: center;
+    margin-right:20px;
+    width: 30px;
+    height: 21px;
+
+}
+
+.hamburger .bar{ /*edw ftiaxnw tis treis grammes */
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .article-side {
+      display: inline;
+    }
+    .article-side .side #rickimg {
+        width: 30%;
+    }
+    section .dl-beauty{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* to grid na einai na exei 2 theseis kai to kathe ena na pianei 1fr*/
+        grid-auto-rows: 150px; /*megethos tou row */
+        grid-gap: 20px; /*apostash aristera katw panw*/
+        
+    }
+    .article-side .side table{
+        margin-top: 0px;
+    }
+    .article-side .side table tr th {
+        padding-left: 14px;
+    }
+    .hamburger{/*orizo to element ham pou tha einai kai se ti diastaseis*/
+        display: flex;
+    }
+    nav{
+        justify-content: space-between;
+        
+    }
+    .nav-elements ul{
+        display:none;
+    }
+    .media{
+        display: inline;
+        text-align: center;
+    }
+    .facebook,.instagram,.twitter{
+        width: auto;
+        align-self: center;
+        margin: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+    section .dl-beauty{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* to grid na einai na exei 2 theseis kai to kathe ena na pianei 1fr*/
+        grid-auto-rows: 80px; /*megethos tou row */
+        grid-gap: 20px; /*apostash aristera katw panw*/
+    }
+    .psyrick img {
+        width: 100%;
+        height: 100px;
+    }
+    .article-side .side #rickimg {
+        width: 50%;
+    }
+}
